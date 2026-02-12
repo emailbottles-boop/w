@@ -1,0 +1,53 @@
+/* ============================================
+   FRACTURED SKY VTT - BASE STYLES & VARIABLES
+   ============================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Color Palette */
+    --bg-dark: #0a0e1a;
+    --bg-card: #151928;
+    --bg-hover: #1f2537;
+    --accent: #8b5cf6;
+    --accent-secondary: #ec4899;
+    --gold: #fbbf24;
+    --text: #e5e7eb;
+    --text-dim: #9ca3af;
+    --border: rgba(139, 92, 246, 0.2);
+    --success: #10b981;
+    --danger: #ef4444;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg-dark);
+    color: var(--text);
+    overflow: hidden;
+    height: 100vh;
+    user-select: none;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent);
+    border-radius: 4px;
+}
+
+/* UTILITY */
+.hidden {
+    display: none !important;
+}
